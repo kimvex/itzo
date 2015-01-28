@@ -633,3 +633,6 @@ body{
 	position: relative;
 	left: 20%;
 }
+.lista-item{
+	display: inline-block;
+}
