@@ -1,4 +1,4 @@
-var $mostrarMUno = $('#u'),
+var $mostrarMUno = $('#menuOcultoNID'),
 	$icoHi = $('#icoHidden');
 function inicio(){
 	var icoInicio = document.getElementById('inicioIco'),
