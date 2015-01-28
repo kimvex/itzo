@@ -1,0 +1,635 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body{
+	font-size: 16px;
+	background: #EEEEEE;
+}
+
+/***********Fuentes de iconos********************/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-k3glgr');
+	src:url('../fonts/icomoon.eot?#iefix-k3glgr') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-k3glgr') format('woff'),
+		url('../fonts/icomoon.ttf?-k3glgr') format('truetype'),
+		url('../fonts/icomoon.svg?-k3glgr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-buscar:before {
+	content: "\f002";
+}
+
+.icon-th-large:before {
+	content: "\f009";
+}
+
+.icon-th-list:before {
+	content: "\f00b";
+}
+
+.icon-check:before {
+	content: "\f00c";
+}
+
+.icon-close:before {
+	content: "\f00d";
+}
+
+.icon-power-off:before {
+	content: "\f011";
+}
+
+.icon-confi:before {
+	content: "\f013";
+}
+
+.icon-borrar:before {
+	content: "\f014";
+}
+
+.icon-inicio:before {
+	content: "\f015";
+}
+
+.icon-align-justify:before {
+	content: "\f039";
+}
+
+.icon-edit:before {
+	content: "\f044";
+}
+
+.icon-trash:before {
+	content: "\f1f8";
+}
+
+.icon-arroba:before {
+	content: "\f1fa";
+}
+
+.icon-usuario:before {
+	content: "\e601";
+}
+
+.icon-grupo:before {
+	content: "\e602";
+}
+
+.icon-assignment-ind:before {
+	content: "\e603";
+}
+
+.icon-perm-media:before {
+	content: "\e604";
+}
+
+.icon-email:before {
+	content: "\e605";
+}
+
+.icon-telefono:before {
+	content: "\e606";
+}
+
+.icon-add-circle-outline:before {
+	content: "\e607";
+}
+
+.icon-create:before {
+	content: "\e608";
+}
+
+.icon-cloud-download:before {
+	content: "\e609";
+}
+
+.icon-keyboard:before {
+	content: "\e60a";
+}
+
+.icon-flow-tree:before {
+	content: "\e60b";
+}
+
+.icon-add-user:before {
+	content: "\e60c";
+}
+
+.icon-feather:before {
+	content: "\e60d";
+}
+
+.icon-mail:before {
+	content: "\e60e";
+}
+
+.icon-man:before {
+	content: "\e60f";
+}
+
+.icon-new-message:before {
+	content: "\e610";
+}
+
+.icon-old-phone:before {
+	content: "\e611";
+}
+
+.icon-facebook-with-circle:before {
+	content: "\e612";
+}
+
+.icon-github:before {
+	content: "\e613";
+}
+
+.icon-google-with-circle:before {
+	content: "\e614";
+}
+
+.icon-instagram-with-circle:before {
+	content: "\e615";
+}
+
+.icon-linkedin-with-circle:before {
+	content: "\e616";
+}
+
+.icon-pinterest-with-circle:before {
+	content: "\e617";
+}
+
+.icon-tumblr-with-circle:before {
+	content: "\e618";
+}
+
+.icon-twitter-with-circle:before {
+	content: "\e619";
+}
+
+.icon-vimeo-with-circle:before {
+	content: "\e61a";
+}
+
+.icon-file-pdf:before {
+	content: "\f016";
+}
+
+.icon-rocket:before {
+	content: "\f033";
+}
+
+.icon-telescope:before {
+	content: "\f088";
+}
+
+.icon-estrella:before {
+	content: "\e600";
+}
+
+.icon-music:before {
+	content: "\e61b";
+}
+
+.icon-bug:before {
+	content: "\e61c";
+}
+
+.icon-monitor:before {
+	content: "\e61d";
+}
+
+.icon-floppy:before {
+	content: "\e61e";
+}
+
+.icon-home3:before {
+	content: "\e902";
+}
+
+.icon-lapiz:before {
+	content: "\e908";
+}
+
+.icon-envelop:before {
+	content: "\e945";
+}
+
+.icon-pushpin:before {
+	content: "\e946";
+}
+
+.icon-lock:before {
+	content: "\e98f";
+}
+
+.icon-unlocked:before {
+	content: "\e990";
+}
+
+.icon-cog2:before {
+	content: "\e994";
+}
+
+.icon-switch:before {
+	content: "\e9b6";
+}
+
+.icon-earth:before {
+	content: "\e9ca";
+}
+
+.icon-attachment:before {
+	content: "\e9cd";
+}
+
+.icon-enter:before {
+	content: "\ea13";
+}
+
+.icon-exit:before {
+	content: "\ea14";
+}
+
+.icon-f-arriba:before {
+	content: "\ea41";
+}
+
+.icon-f-abajo:before {
+	content: "\ea43";
+}
+
+.icon-google-plus3:before {
+	content: "\ea8a";
+}
+
+.icon-facebook3:before {
+	content: "\ea8e";
+}
+
+.icon-twitter3:before {
+	content: "\ea93";
+}
+
+.icon-youtube3:before {
+	content: "\ea99";
+}
+
+.icon-flickr4:before {
+	content: "\eaa3";
+}
+
+.icon-github2:before {
+	content: "\eab1";
+}
+
+.icon-blogger2:before {
+	content: "\eaba";
+}
+
+.icon-tumblr2:before {
+	content: "\eabc";
+}
+
+.icon-tux:before {
+	content: "\eabe";
+}
+
+.icon-apple:before {
+	content: "\eabf";
+}
+
+.icon-finder:before {
+	content: "\eac0";
+}
+
+.icon-android:before {
+	content: "\eac1";
+}
+
+.icon-windows:before {
+	content: "\eac2";
+}
+
+.icon-windows8:before {
+	content: "\eac3";
+}
+
+.icon-skype:before {
+	content: "\eac6";
+}
+
+.icon-reddit:before {
+	content: "\eac7";
+}
+
+.icon-linkedin:before {
+	content: "\eac8";
+}
+
+.icon-pinterest:before {
+	content: "\ead0";
+}
+
+.icon-foursquare:before {
+	content: "\ead5";
+}
+
+.icon-file-pdf2:before {
+	content: "\eada";
+}
+
+.icon-file-openoffice:before {
+	content: "\eadb";
+}
+
+.icon-file-word:before {
+	content: "\eadc";
+}
+
+.icon-file-excel:before {
+	content: "\eadd";
+}
+
+.icon-libreoffice:before {
+	content: "\eade";
+}
+
+.icon-html5:before {
+	content: "\eadf";
+}
+
+.icon-html52:before {
+	content: "\eae0";
+}
+
+.icon-css3:before {
+	content: "\eae1";
+}
+
+.icon-chrome:before {
+	content: "\eae5";
+}
+
+.icon-firefox:before {
+	content: "\eae6";
+}
+
+.icon-IE:before {
+	content: "\eae7";
+}
+
+.icon-opera:before {
+	content: "\eae8";
+}
+
+.icon-safari:before {
+	content: "\eae9";
+}
+
+.icon-calendar:before {
+	content: "\e61f";
+}
+
+.icon-calendar2:before {
+	content: "\e620";
+}
+
+.icon-camera:before {
+	content: "\e621";
+}
+
+.icon-suitcase:before {
+	content: "\e622";
+}
+
+.icon-suitcase2:before {
+	content: "\e623";
+}
+
+.icon-picture:before {
+	content: "\e624";
+}
+
+.icon-pictures:before {
+	content: "\e625";
+}
+
+.icon-pictures2:before {
+	content: "\e626";
+}
+
+.icon-alarmclock:before {
+	content: "\e627";
+}
+
+.icon-chart:before {
+	content: "\e628";
+}
+
+.icon-chart2:before {
+	content: "\e629";
+}
+
+.icon-graduate:before {
+	content: "\e62a";
+}
+
+.icon-lab:before {
+	content: "\e62b";
+}
+
+.icon-football:before {
+	content: "\e62c";
+}
+
+.icon-baseball:before {
+	content: "\e62d";
+}
+
+.icon-fut:before {
+	content: "\e62e";
+}
+
+.icon-attachment2:before {
+	content: "\e62f";
+}
+
+.icon-addressbook:before {
+	content: "\e630";
+}
+
+.icon-pictures3:before {
+	content: "\e631";
+}
+
+.icon-clipboard:before {
+	content: "\e632";
+}
+
+.icon-clipboard2:before {
+	content: "\e633";
+}
+
+.icon-switch2:before {
+	content: "\e634";
+}
+
+.icon-heart:before {
+	content: "\e635";
+}
+
+.icon-cloud:before {
+	content: "\e636";
+}
+
+.icon-star:before {
+	content: "\e637";
+}
+
+.icon-tv:before {
+	content: "\e638";
+}
+
+.icon-video:before {
+	content: "\e639";
+}
+
+.icon-user2:before {
+	content: "\e63a";
+}
+
+.icon-key:before {
+	content: "\e63b";
+}
+
+.icon-search2:before {
+	content: "\e63c";
+}
+
+.icon-settings:before {
+	content: "\e63d";
+}
+
+.icon-camera2:before {
+	content: "\e63e";
+}
+
+.icon-pen:before {
+	content: "\e63f";
+}
+
+.icon-like:before {
+	content: "\e640";
+}
+
+.icon-paperplane:before {
+	content: "\e641";
+}
+
+.icon-banknote:before {
+	content: "\e642";
+}
+
+.icon-megaphone:before {
+	content: "\e643";
+}
+
+.icon-study:before {
+	content: "\e644";
+}
+
+.icon-lab2:before {
+	content: "\e645";
+}
+
+.icon-t-shirt:before {
+	content: "\e646";
+}
+
+.icon-clip:before {
+	content: "\e647";
+}
+
+
+/*********Header********************************/
+.header-principal{
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.header-iconoUniversidad{
+	padding-top: 1em;
+	padding-bottom: .3em;
+}
+.header-logo{
+	display: inline-block;
+}
+.header-description{
+	display: inline-block;
+}
+.header-menu{
+	text-align: center;
+	padding: 1em;
+	border:1px solid #d4d4d4;
+	border-radius: 12px;
+	background: #fafafa;
+
+}
+.header-menu .ico {
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+.header-menu a{
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;
+}
+.header-menu a:hover{
+	color: #652;
+}
+.header-menuItem{
+	margin: 0;
+	padding: 0;
+}
+.menuItem-header{
+	display: inline-block;
+	padding-right: 4em;
+	color: #666;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.uIco{
+	padding-left: .3em;
+}
+.textIco:hover{
+	font-size: 1.3em;
+}
+.u{
+	width: 60%;
+	height: 100px;
+	background: #FFF;
+	display: none;
+	border: 5px solid #666;
+	margin-top: .5em;
+	border-radius: 0px 2em 0px 2em;
+	position: relative;
+	left: 20%;
+}
