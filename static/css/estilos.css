@@ -577,7 +577,7 @@ body{
 }
 .header-iconoUniversidad{
 	display: inline-block;
-	margin-left: 10%;
+	margin-left: 5%;
 	height: 1%;
 	position: relative;
 }
@@ -610,7 +610,7 @@ body{
 .header-description{
 	width: 40%;
 	float: right;
-	margin-right: 10%;
+	margin-right: 5%;
 	display: inline-block;
 }
 .header-descriptionTexto{
@@ -632,12 +632,12 @@ body{
 	display: none;
 }
 .header-menu{
-	width: 80%;
+	width: 90%;
 	position: relative;
 	background: #fafafa;
 	text-align: center;
-	margin-right: 10%;
-	margin-left: 10%;
+	margin-right: 5%;
+	margin-left: 5%;
 	margin-top: .6em;
 	border:1px solid #d4d4d4;
 	border-radius: 12px;
@@ -777,7 +777,20 @@ body{
 .carrusel-img{
 	max-width: 80%;
 }
-
+/**************Contenido(Section)*****************/
+.contenido{
+	width: 90%;
+	margin: 1% 5% 0% 5%;
+	background: green;
+	height: 500px;
+}
+/****************Pie de pagina********************/
+.pieDePagina{
+	margin-top: 1em;
+	width: 100%;
+	background: black;
+	height: 100px;
+}
 /*******************************Media query ************************/
 @media screen and (max-width: 1120px){
 	.header-description{
