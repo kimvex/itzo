@@ -623,25 +623,23 @@ body{
 	font-size: 1.3em;
 }
 .menuOcultoNI{
-	width: 70%;
-	height: 100px;
+	width: 80%;
 	background: #FFF;
 	display: none;
 	border: 5px solid #666;
 	margin-top: .5em;
 	border-radius: 0px 2em 0px 2em;
 	position: relative;
-	left: 20%;
+	left: 10%;
 }
 .menuOcultoNI-lista{
 	text-transform: uppercase;
-	margin-top: 2.9em;
 	font-size: 12px;
-	text-align: center;
+	position: relative;
 }
 .lista-item{
 	display: inline-block;
-	margin-right: 1em;
+	margin: 1em;
 	border: 1px solid #d4d4d4;
 	border-radius: 12px;
 	background: #fafafa;
@@ -650,4 +648,10 @@ body{
 	padding-top: 1em;
 	padding-bottom: 1em;
 	color: #666;
+	-webkit-transition: .4s;
+}
+.lista-item:hover{
+	background: #EEEEEE;
+	color: #fff;
+	-webkit-transition: .4s;
 }
