@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);*/
 
 body{
 	font-size: 16px;
-	background: #EEEEEE;
+	background: #FFF;
 }
 
 /***********Fuentes de iconos********************/
@@ -449,6 +449,7 @@ body{
 
 .icon-graduate:before {
 	content: "\e62a";
+	margin-right: 0.2em;
 }
 
 .icon-lab:before {
@@ -570,40 +571,77 @@ body{
 
 /*********Header********************************/
 .header-principal{
-	margin-right: 5%;
-	margin-left: 5%;
+	width: 100%;
+	height: 5%;
+	position: relative;
 }
 .header-iconoUniversidad{
-	padding-top: 1em;
-	padding-bottom: .3em;
+	display: inline-block;
+	margin-left: 10%;
+	height: 1%;
+	position: relative;
 }
 .header-logo{
+	width: 100%;
+	height: 100%;
+	position: relative;
 	display: inline-block;
+}
+.header-logoImagen{
+	width: 300px;
+	height: 100px;
+	border: 2px solid #d4d4d4;
+	border-radius: 6px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	-webkit-transition: .4s;
+}
+.header-logoImagen:hover{
+	box-shadow: rgba(0,0,0,0.5) 10px 11px 20px;
+	-webkit-transition: .4s;
+}
+.header-logoUniversidad{
+	display: inline-block;
+	padding-left: 2em;
+}
+.header-logoUni{
+	width: 100px;
+	height: 100px;
 }
 .header-description{
+	width: 40%;
+	float: right;
+	margin-right: 10%;
 	display: inline-block;
 }
+.header-descriptionTexto{
+	color: #AEADB3;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: .8em;
+}
+.header-descriptionTexto:before{
+	content: 'Subsecretaría de Educación Superior';
+	margin-bottom: .1em;
+	display: block;
+}
+.header-descriptionTexto:after{
+	content: 'Instituto Tecnológico de la Zona Olmeca';
+}
+/***************Nav y sub-menus*****************/
+.menuItem-responsivo{
+	display: none;
+}
 .header-menu{
+	width: 80%;
+	position: relative;
+	background: #fafafa;
 	text-align: center;
-	padding: 1em;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: .6em;
 	border:1px solid #d4d4d4;
 	border-radius: 12px;
-	background: #fafafa;
-
-}
-.header-menu .ico {
-	text-decoration: none;
-	color: #666;
 	text-transform: uppercase;
-	font-size: 1.5em;
-}
-.header-menu a{
-	text-decoration: none;
-	color: #666;
-	text-transform: uppercase;
-}
-.header-menu a:hover{
-	color: #652;
 }
 .header-menuItem{
 	margin: 0;
@@ -611,49 +649,218 @@ body{
 }
 .menuItem-header{
 	display: inline-block;
-	padding-right: 4em;
-	color: #666;
-	text-transform: uppercase;
-	font-size: 14px;
 }
-.uIco{
-	padding-left: .3em;
+.icono-menuItem{
+	color:#666;
+	padding: .5em 1em .5em 1em;
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	-webkit-transition: .4s;
 }
-.textIco:hover{
-	font-size: 1.3em;
+.icono-menuItem:hover{
+	color: #652;
+	-webkit-transition: .4s;
+}
+#idInicioIco{
+	position: relative;
+}
+#inicioIco,
+#Itembuzon{
+	font-size: 1.5em;
+	padding-bottom: .2em;
+	padding-top: .2em;
+	position: relative;
+	top: 4px;
 }
 .menuOcultoNI{
-	width: 80%;
-	background: #FFF;
-	display: none;
-	border: 5px solid #666;
-	margin-top: .5em;
-	border-radius: 0px 2em 0px 2em;
+	width: 70%;
 	position: relative;
-	left: 10%;
-	text-align: center;
+	background: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: .3em;
+	border: 5px solid #666;
+	border-radius: 0px 24px 0px 24px;
+	display: none;
 }
 .menuOcultoNI-lista{
-	text-transform: uppercase;
-	font-size: 12px;
 	position: relative;
+	text-transform: uppercase;
+	margin:0;
 	padding: 0;
+	text-align: center;
 }
 .lista-item{
+	background: #fafafa;
 	display: inline-block;
-	margin: 1em;
+	font-size: .6em;
 	border: 1px solid #d4d4d4;
 	border-radius: 12px;
-	background: #fafafa;
-	padding-left: .9em;
-	padding-right: .9em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	color: #666;
+	margin: .2em;
 	-webkit-transition: .4s;
 }
 .lista-item:hover{
 	background: #EEEEEE;
-	color: #fff;
 	-webkit-transition: .4s;
+}
+.submenuItem{
+	text-decoration: none;
+	color:#666;
+	display: block;
+	padding: 1em;
+}
+.submenuItem:hover{
+	color: white;
+}
+
+.menuOculto2{
+	width: 70%;
+	position: relative;
+	background: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: .3em;
+	border: 5px solid #666;
+	border-radius: 0px 24px 0px 24px;
+	display: none;
+}
+.menuOculto2 .menuOcultoNI-lista li{
+	background: #fafafa;
+	display: inline-block;
+	font-size: .6em;
+	border: 1px solid #d4d4d4;
+	border-radius: 12px;
+	margin: .2em;
+	-webkit-transition: .4s;
+}
+.submenuItemOferta{
+	text-decoration: none;
+	color:#666;
+	display: block;
+	padding: 1em;
+}
+.menuOculto3{
+	width: 70%;
+	position: relative;
+	background: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: .3em;
+	border: 5px solid #666;
+	border-radius: 0px 24px 0px 24px;
+	display: none;
+}
+.menuOculto3 .menuOcultoNI-lista li{
+	background: #fafafa;
+	display: inline-block;
+	font-size: .6em;
+	border: 1px solid #d4d4d4;
+	border-radius: 12px;
+	margin: .2em;
+	-webkit-transition: .4s;
+}
+.submenuItemServicios{
+	text-decoration: none;
+	color:#666;
+	display: block;
+	padding: 1em;
+}
+/**********************Carrusel*******************************************/
+.header-carrusel{
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 1em;
+	position: relative;
+	text-align: center;
+}
+.carrusel-img{
+	max-width: 80%;
+}
+
+/*******************************Media query ************************/
+@media screen and (max-width: 1120px){
+	.header-description{
+		width: 30%;
+		font-size: .7em;
+	}
+}
+@media screen and (max-width: 1000px){
+	.header-description{
+		width: 20%;
+		font-size: .7em;
+	}
+	.icono-menuItem{
+		padding: 1em;
+		font-size: .8em;
+	}
+	.header-menu{
+		text-align: center;
+		width: 98%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+	.header-carrusel{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.carrusel-img{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 770px){
+	.header-description{
+		display: none;
+	}
+	.icono-menuItem{
+		padding: .7em;
+		font-size: .8em;
+	}
+	.header-menu{
+		font-size: 1em;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		border-radius: 0px;
+		border-left: 0px;
+		border-right: 0px;
+		margin-left: 0;
+	}
+	.header-carrusel{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.carrusel-img{
+		width: 99%;
+	}
+}
+@media screen and (max-width: 600px){
+	.header-logoUniversidad{
+		display: none;
+	}
+	.header-menuItem{
+		display: none;
+	}
+	.header-menu{
+		position: relative;
+		text-align: center;
+		width: 100%;
+		height: 10%;
+		margin-left: 0;
+		border-left: 0px;
+		border-right: 0px;
+		border-radius: 0px;
+	}
+	.menuItem-responsivo{
+		display:block;
+		position: relative;
+		font-size: 2em;
+	}
+	.header-carrusel{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.carrusel-img{
+		max-width: 100%;
+	}
 }
