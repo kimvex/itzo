@@ -784,6 +784,7 @@ body{
 }
 .contenido-articulo{
 	width: 100%;
+	background: #e9eaed;
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding-bottom: 1em;
@@ -791,7 +792,9 @@ body{
 	border-left: 1px solid #CCC;
 	border-right: 1px solid #CCC;
 	border-bottom: 2px solid #CCC;
+	border-radius: 12px 12px 12px 12px;
 	border-width: 7%;
+	box-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 }
 .img-articuloPrincipal{
 	width: 100%;
