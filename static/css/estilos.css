@@ -787,6 +787,9 @@ body{
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding-bottom: 1em;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
 	border-bottom: 2px solid #CCC;
 	border-width: 7%;
 }
