@@ -646,7 +646,7 @@ body{
 }
 .icono-menuItem{
 	color:#666;
-	padding: .5em 1em .5em 1em;
+	padding: 1em;
 	display: block;
 	text-decoration: none;
 	font-size: 16px;
@@ -664,10 +664,20 @@ body{
 #inicioIco,
 #Itembuzon{
 	font-size: 1.5em;
-	padding-bottom: .2em;
-	padding-top: .2em;
 	position: relative;
 	top: 4px;
+	padding: .7em .5em .8em .5em;
+	color: #666;
+	text-decoration: none;
+	-webkit-transition: .4s;
+}
+
+#inicioIco:hover,
+#Itembuzon:hover{
+	color: white;
+	-webkit-transition: .4s;
+	background: black;
+	border-radius: 5px;
 }
 .menuOcultoNI{
 	width: 70%;
