@@ -653,8 +653,10 @@ body{
 	-webkit-transition: .4s;
 }
 .icono-menuItem:hover{
-	color: #652;
+	color: white;
 	-webkit-transition: .4s;
+	text-transform: uppercase;
+	background: black;
 }
 #idInicioIco{
 	position: relative;
